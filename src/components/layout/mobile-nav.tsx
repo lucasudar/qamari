@@ -62,9 +62,21 @@ export function NavMobile() {
         </ul>
 
         <div className="mt-5 flex items-center justify-end space-x-4">
-          <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-            <Icons.gitHub className="size-6" />
-            <span className="sr-only">GitHub</span>
+          <Link
+            href={`tel:${siteConfig.phone}`}
+            className="font-medium underline underline-offset-4"
+          >
+            <Icons.phone className="size-5" />
+          </Link>
+          <Link
+            href={`mailto:${siteConfig.mailSupport}`}
+            className="font-medium underline underline-offset-4"
+          >
+            <Icons.email className="size-5" />
+          </Link>
+          <Link href={siteConfig.links.facebook} target="_blank" rel="noreferrer">
+            <Icons.facebook className="size-6" />
+            <span className="sr-only">Facebook</span>
           </Link>
           <ModeToggle />
         </div>

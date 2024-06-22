@@ -5,8 +5,10 @@ export type SiteConfig = {
   ogImage: string;
   links: {
     github: string;
+    facebook: string;
   };
   mailSupport: string;
+  phone: string;
 };
 
 export type MarketingConfig = {

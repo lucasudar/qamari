@@ -7,7 +7,7 @@
 // import PreviewLanding from "@/components/sections/preview-landing";
 // import Testimonials from "@/components/sections/testimonials";
 
-export default function IndexPage() {
+export default function HomePage() {
   return (
     <>
       <p>asdf</p>

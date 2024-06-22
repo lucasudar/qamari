@@ -9,9 +9,11 @@ export const siteConfig: SiteConfig = {
   url: site_url,
   links: {
     github: "https://github.com/lucasudar",
+    facebook: "https://www.facebook.com/profile.php?id=61560355806046&mibextid=LQQJ4d",
   },
   ogImage: `${site_url}/og.jpg`,
-  mailSupport: "qumarimohammad1981@gmail.com",
+  mailSupport: "info@qamari.ca",
+  phone: "403-617-2813",
 };
 
 export const footerLinks: SidebarNavItem[] = [

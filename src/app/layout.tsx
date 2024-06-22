@@ -4,6 +4,10 @@ import { ThemeProvider } from "next-themes";
 import { Analytics } from "@/components/analytics";
 import { cn, constructMetadata } from "@/lib/utils";
 
+import { NavBar } from "@/components/layout/navbar";
+import { SiteFooter } from "../components/layout/site-footer";
+import { NavMobile } from "../components/layout/mobile-nav";
+
 export const metadata = constructMetadata();
 
 export default function RootLayout({
@@ -25,7 +29,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-h-screen flex-col">
+            <NavMobile />
+            <NavBar scroll={true} />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </div>
           <Analytics />
         </ThemeProvider>
       </body>

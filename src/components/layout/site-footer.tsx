@@ -40,7 +40,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           <span className="text-muted-foreground text-sm">
             Copyright &copy; 2024. All rights reserved.
           </span>
-          <p className="text-left text-sm text-muted-foreground">
+          {/* <p className="text-left text-sm text-muted-foreground">
             Built by{" "}
             <Link
               href={siteConfig.links.github}
@@ -60,16 +60,28 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               Vercel
             </Link>
             .
-          </p>
+          </p> */}
 
           <div className="flex items-center gap-3">
+          <Link
+              href={`tel:${siteConfig.phone}`}
+              className="font-medium underline underline-offset-4"
+            >
+              <Icons.phone className="size-5" />
+            </Link>
             <Link
-              href={siteConfig.links.github}
+              href={`mailto:${siteConfig.mailSupport}`}
+              className="font-medium underline underline-offset-4"
+            >
+              <Icons.email className="size-5" />
+            </Link>
+            <Link
+              href={siteConfig.links.facebook}
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              <Icons.gitHub className="size-5" />
+              <Icons.facebook className="size-5" />
             </Link>
             <ModeToggle />
           </div>
