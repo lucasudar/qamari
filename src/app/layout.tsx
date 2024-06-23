@@ -5,7 +5,7 @@ import { Analytics } from "@/components/analytics";
 import { cn, constructMetadata } from "@/lib/utils";
 
 import { NavBar } from "@/components/layout/navbar";
-import { SiteFooter } from "../components/layout/site-footer";
+import { SiteFooter } from "../components/layout/footer";
 import { NavMobile } from "../components/layout/mobile-nav";
 import { Toaster } from "../components/ui/sonner";
 

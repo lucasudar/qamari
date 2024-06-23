@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "Qumari Constraction",
     items: [
       { title: "Home", href: "/" },
       { title: "Gallery", href: "/gallery" },
