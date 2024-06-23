@@ -1,10 +1,10 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextRequest } from 'next/server';
 import { toMarkdownFormat } from "@/lib/utils";
 
 const telegramBotKey = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
 const chat_id = process.env.NEXT_PUBLIC_TELEGRAM_USER_ID;
 
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
     const currentUtcTime = new Date(Date.now());
     const edmontonTime = new Date(currentUtcTime.toLocaleString('en-US', { timeZone: 'America/Edmonton' }));
     const formattedEdmontonTime = `${edmontonTime.getMonth() + 1}/${edmontonTime.getDate()}/${edmontonTime.getFullYear()} ${edmontonTime.getHours()}:${String(edmontonTime.getMinutes()).padStart(2, '0')}`;
