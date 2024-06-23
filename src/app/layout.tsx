@@ -7,6 +7,7 @@ import { cn, constructMetadata } from "@/lib/utils";
 import { NavBar } from "@/components/layout/navbar";
 import { SiteFooter } from "../components/layout/site-footer";
 import { NavMobile } from "../components/layout/mobile-nav";
+import { Toaster } from "../components/ui/sonner";
 
 export const metadata = constructMetadata();
 
@@ -35,6 +36,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <SiteFooter />
           </div>
+          <Toaster richColors closeButton />
           <Analytics />
         </ThemeProvider>
       </body>

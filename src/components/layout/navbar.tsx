@@ -8,6 +8,7 @@ import { marketingConfig } from "@/config/marketing";
 import { siteConfig } from "@/config/site";
 import { useScroll } from "../../hooks/use-scroll";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -53,6 +54,16 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </nav>
           ) : null}
         </div>
+        <Link href="/contact" className="hidden md:block">
+          <Button
+            className="gap-2 px-4"
+            variant="default"
+            size="sm"
+            rounded="full"
+          >
+            <span>Get a Free Consultation</span>
+          </Button>
+        </Link>
       </MaxWidthWrapper>
     </header>
   );

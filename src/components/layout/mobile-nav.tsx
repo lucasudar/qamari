@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/shared/icons";
 
 import { ModeToggle } from "./mode-toggle";
+import { Button } from "../ui/button";
 
 export function NavMobile() {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,6 @@ export function NavMobile() {
   // prevent body scroll when modal is open
   useEffect(() => {
     if (open) {
-      console.log("open");
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -61,7 +61,19 @@ export function NavMobile() {
           ))}
         </ul>
 
-        <div className="mt-5 flex items-center justify-end space-x-4">
+        <Link href="/contact" className="mt-5 flex items-center justify-center">
+          <Button
+            className="gap-2 px-4"
+            variant="default"
+            size="sm"
+            rounded="full"
+            onClick={() => setOpen(false)}
+          >
+            <span>Get a Free Consultation</span>
+          </Button>
+        </Link>
+
+        <div className="mt-5 flex items-center justify-end space-x-8">
           <Link
             href={`tel:${siteConfig.phone}`}
             className="font-medium underline underline-offset-4"

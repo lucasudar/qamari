@@ -9,6 +9,7 @@ export type SiteConfig = {
   };
   mailSupport: string;
   phone: string;
+  address: string;
 };
 
 export type MarketingConfig = {

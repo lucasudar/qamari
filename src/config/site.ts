@@ -14,34 +14,16 @@ export const siteConfig: SiteConfig = {
   ogImage: `${site_url}/og.jpg`,
   mailSupport: "info@qamari.ca",
   phone: "403-617-2813",
+  address: "Calgary, AB",
 };
 
 export const footerLinks: SidebarNavItem[] = [
   {
     title: "Company",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Terms", href: "/terms" },
-      { title: "Privacy", href: "/privacy" },
-    ],
-  },
-  {
-    title: "Product",
-    items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
-    ],
-  },
-  {
-    title: "Docs",
-    items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "Home", href: "/" },
+      { title: "Gallery", href: "/gallery" },
+      { title: "Contact us", href: "/contact" },
     ],
   },
 ];

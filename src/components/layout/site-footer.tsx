@@ -10,7 +10,7 @@ import { Icons } from "../shared/icons";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn("border-t", className)}>
-      <div className="container grid max-w-6xl grid-cols-1 gap-6 py-14 sm:grid-cols-2 md:grid-cols-5">
+      <div className="container grid max-w-6xl grid-cols-2 p-6 py-14 sm:grid-cols-2 md:grid-cols-3">
         {footerLinks.map((section) => (
           <div key={section.title}>
             <span className="text-sm font-medium text-foreground">
@@ -30,8 +30,30 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </ul>
           </div>
         ))}
-        <div className="flex flex-col  items-end md:col-span-2">
-          <p>put something here</p>
+        <div className="flex flex-col items-end md:col-span-2">
+          <div>
+            <span className="text-sm font-medium text-foreground">
+              Contact us
+            </span>
+            <ul className="mt-4 list-inside space-y-3">
+              <li>
+                <Link
+                  href={`tel:${siteConfig.phone}`}
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  {siteConfig.phone}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`mailto:${siteConfig.mailSupport}`}
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  {siteConfig.mailSupport}
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -63,7 +85,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           </p> */}
 
           <div className="flex items-center gap-3">
-          <Link
+            <Link
               href={`tel:${siteConfig.phone}`}
               className="font-medium underline underline-offset-4"
             >
