@@ -51,6 +51,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
                 >
                   {siteConfig.mailSupport}
                 </Link>
+                <p className="text-sm text-muted-foreground hover:text-primary mt-4">{siteConfig.address}</p>
               </li>
             </ul>
           </div>
