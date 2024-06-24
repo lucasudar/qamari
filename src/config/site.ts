@@ -3,7 +3,7 @@ import { SidebarNavItem, SiteConfig } from "../types";
 const site_url: string = process.env.NEXT_PUBLIC_APP_URL || '';
 
 export const siteConfig: SiteConfig = {
-  name: "Qumari Constraction",
+  name: "Qamari Constraction",
   description:
     "Fencing, Deck, Framing, Railing, Planter Box and more.",
   url: site_url,
@@ -14,12 +14,12 @@ export const siteConfig: SiteConfig = {
   ogImage: `${site_url}/og.jpg`,
   mailSupport: "info@qamari.ca",
   phone: "403-617-2813",
-  address: "Calgary, AB",
+  address: "240 Berwick Dr NW Calgary, AB",
 };
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Qumari Constraction",
+    title: "Qamari Constraction",
     items: [
       { title: "Home", href: "/" },
       { title: "Gallery", href: "/gallery" },
