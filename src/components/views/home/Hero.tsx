@@ -34,6 +34,7 @@ export default function HeroSection() {
                 <div className="flex justify-center items-center">
                     <Image
                         src="/images/hero.jpg"
+                        priority
                         alt="Hero"
                         width={500}
                         height={500}
