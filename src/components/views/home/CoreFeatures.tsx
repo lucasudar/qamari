@@ -1,4 +1,7 @@
+"use client"
+
 import { coreFeaturesConfig } from "@/config/features";
+import { CldImage } from "next-cloudinary";
 
 export default function CoreFeatures() {
     return (
@@ -22,23 +25,28 @@ export default function CoreFeatures() {
                     <rect width='100%' height='100%' strokeWidth={0} fill='url(#rect-pattern-2)' />
                 </svg>
                 <section className='bg-white pb-14 pt-14 dark:bg-background'>
-                    <div className='mx-auto w-fit text-3xl font-extrabold text-slate-900 sm:text-5xl'>
+                    <div className='mx-auto w-fit sm:text-5xl'>
                         <h2 className='text-center text-lg uppercase tracking-widest mb-8 opacity-80'>Core Features</h2>
                     </div>
                     <div className='mx-auto mt-[60px] flex w-full max-w-7xl flex-wrap items-center justify-center xl:justify-between'>
-                        {coreFeaturesConfig.coreFeatures.map(
-                            (item: any, index: number) => (
-                                <div key={item.name} className='h-64 w-[416px] px-7 py-11 text-center'>
-                                    <span className='text-3xl font-semibold text-indigo-500'>{1 + index}</span>
-                                    <div className='mt-2'>
-                                        <h2 className='mx-auto mb-3 max-w-[300px] whitespace-pre-line text-xl font-semibold text-slate-900 dark:text-white'>
-                                            {item.name}
-                                        </h2>
-                                        <p className='mx-auto max-w-xs text-gray-600 dark:text-gray-400'>{item.desc}</p>
-                                    </div>
+                        {coreFeaturesConfig.coreFeatures.map((item: any, index: number) => (
+                            <div key={item.name} className='flex h-auto w-[416px] flex-col items-center px-7 py-11 text-center'>
+                                <span className='text-3xl font-semibold text-indigo-500'>{1 + index}</span>
+                                <div className='mt-2'>
+                                    <h2 className='mx-auto mb-3 max-w-[300px] whitespace-pre-line text-xl font-semibold text-slate-900 dark:text-white'>
+                                        {item.name}
+                                    </h2>
+                                    <p className='mx-auto max-w-xs text-gray-600 dark:text-gray-400'>{item.desc}</p>
                                 </div>
-                            ),
-                        )}
+                                <CldImage
+                                    src={item.url}
+                                    width={300}
+                                    height={300}
+                                    alt={item.desc}
+                                    className="mt-4 mb-2 w-full max-w-[280px] h-auto object-cover"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </section>
             </div>

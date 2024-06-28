@@ -30,12 +30,6 @@ export function constructMetadata({
       "Railing",
       "Planter Box",
     ],
-    authors: [
-      {
-        name: "Nikita Starkov",
-      },
-    ],
-    creator: "Nikita Starkov",
     openGraph: {
       type: "website",
       locale: "en_US",

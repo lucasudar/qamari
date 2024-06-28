@@ -3,7 +3,7 @@ import { SidebarNavItem, SiteConfig } from "../types";
 const site_url: string = process.env.NEXT_PUBLIC_APP_URL || '';
 
 export const siteConfig: SiteConfig = {
-  name: "Qamari Constraction",
+  name: "Qamari Construction",
   description:
     "Fencing, Deck, Framing, Railing, Planter Box and more.",
   url: site_url,
@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Qamari Constraction",
+    title: "Qamari Construction",
     items: [
       { title: "Home", href: "/" },
       { title: "Gallery", href: "/gallery" },

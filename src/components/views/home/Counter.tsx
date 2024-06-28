@@ -2,13 +2,13 @@ import Counter from "@/components/ui/counter";
 
 export default function CounterSection() {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-white dark:bg-background py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Our Achievements</h2>
+        <h2 className="text-center text-lg uppercase tracking-widest mb-8 opacity-80">Our Achievements</h2>
         <div className="flex flex-wrap justify-center">
-          <Counter end={150} label="Satisfied Clients" />
-          <Counter end={198} label="Built Projects" />
-          <Counter end={10} label="Years of Experience" />
+          <Counter end={200} label="Satisfied Clients" symbol="+"/>
+          <Counter end={100} label="Your Satisfaction" symbol="%"/>
+          <Counter end={15} label="Years of Experience" symbol="+"/>
         </div>
       </div>
     </section>
