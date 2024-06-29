@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 export default function Page() {
     return (
         <div className="bg-[url('https://res.cloudinary.com/de31kmdsm/image/upload/v1719599473/qamari/321_ccsibb.jpg')] bg-cover bg-center bg-no-repeat">
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 opacity-85">
                 <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
                     <div className="bg-secondary p-6 shadow-lg rounded-lg">
                         <FormSection />

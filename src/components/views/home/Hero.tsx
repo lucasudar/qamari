@@ -35,7 +35,7 @@ export default function HeroSection() {
                                 className="gap-2 px-6 py-3 bg-red-500 text-white rounded-full hover:bg-gray-900 transition duration-300 ease-in-out shadow-lg"
                                 size="lg"
                             >
-                                <span>Call Us</span>
+                                <span>Call Now</span>
                             </Button>
                         </Link>
                     </div>

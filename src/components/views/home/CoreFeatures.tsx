@@ -8,7 +8,7 @@ export default function CoreFeatures() {
         <div className='overflow-hidden'>
             <div className='relative isolate mx-auto mt-10 w-full pt-10'>
                 <svg
-                    className='absolute inset-0 hidden h-full w-full stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)] dark:stroke-white/10 sm:block'
+                    className='absolute opacity-50 inset-0 hidden h-full w-full stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)] dark:stroke-white/10 sm:block'
                     aria-hidden='true'
                 >
                     <defs>
